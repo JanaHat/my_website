@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link class="logo-title" rel="icon" href="css/assets/logo.png" type="image/x-icon">
+    <title>Jana Hatasova</title>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="#home"><div class="logo"></div></a>
+        <ul class="nav-links">
+            <li><span>&lt;</span><a href="#home" id="home-link">home</a><span>&gt;</span></li>
+            <li><span>&lt;</span><a href="#about" id="about-link">about</a><span>&gt;</span></li>
+            <li><span>&lt;</span><a href="#projects" id="project-link">projects</a><span>&gt;</span></li>
+            <li><span>&lt;</span><a href="#contact" id="contact-link">contact</a><span>&gt;</span></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+    
+    <!-- Home section -->
+    <section class="home" id="home">
+        <div class="box0" id="box0">
+            <p>Hi, my name is</p>
+            <h1>Jana Hatasova.</h1>
+            <h2>I am a Web<span class="typing"></span><span class="cursor"></span></h2>
+            <a href="#projects"><button class="contactMe" id="contactMe">My projects</button></a>
+        </div>
+        <div class="my-picture">
+            <div class="overlay"></div>
+        </div>  
+    </section>
+
+    <!-- About section -->
+    <section class="about" id="about">
+        <div class="box1">
+            <div class="wrapper">
+                <div class="ball"></div>
+                <div class="ball"></div>
+                <div class="ball"></div>
+                <div class="ball"></div>
+                <svg>
+                    <defs>
+                        <filter id="filter">
+                            <feGaussianBlur in="SourceGraphic"stdDeviation="18" result="blur"/>
+                            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 28 -10" result="filter" />
+                            <feComposite in="SourceGraphic" in2="filter" operator="atop" />
+                        </filter>
+                    </defs>
+                </svg>
+            </div>
+            <div class="aboutme">
+                <h1><span>&lt</span>about<span>&gt</span></h1>
+                <h2>Hi, I am a Front End Web Developer located in Manchester.</h2>
+                <div class="paragraph">
+                    <p>I have always had passion for art and design and I enjoy problem solving.<br>I build modern, responsive websites and apps that have an easy to understand user interface (UX/UI).<br>I am learning Javascript framework React and taking AWS course for cloud practitioner at the moment. Next step for me is to learn Back End so that I can be complex developer.<br>I am highly motivated and driven to learn and improve my skills and I see any opportunity as a valuable experience.
+                    </p>
+                    <p><span>In my spare time I enjoy listening to music, reading a book, watching a good movie or going for a walk.</span></p>
+                </div>
+            </div>        
+        </div>
+        <div class="skills">
+            <h3>My Skills</h3>
+                <ul>
+                    <li>Adobe Suite<span>&#124</span></li>
+                    <li>HTML<span>&#124</span></li>
+                    <li>(S)CSS<span>&#124</span></li>
+                    <li>Bootstrap<span>&#124</span></li>
+                    <li>JavaScript(ES6+)<span>&#124</span></li>
+                    <li>React<span>&#124</span></li>
+                    <li>GIT</li>
+                </ul>
+        </div>   
+    </section>
+
+    <!-- Projects section -->
+    <section class="projects" id="projects">
+        <h1><span>&lt</span>projects<span>&gt</span></h1>
+        <h2>Personal projects I worked on during my learning</h2>
+        <div class="box2">
+            <a href="https://weather-janah.netlify.app" target="_blank" class="card1" id="card1"></a>
+            <div class="card2" id="card2">
+                <h3><span>&lt&lt</span> Weather App</h3>
+                <p>You can check current weather in location you choose. It is fully responsive. I had to work with api to get needed data. It is built with JavaScript framework <span>React</span>.</p>
+                <a href="https://weather-janah.netlify.app" target="_blank"><button class="live" ></button></a>
+                <a href="https://github.com/JanaHat/weather-app-react" target="_blank"><button class="ghub"></button></a>
+            </div>
+        </div>
+        <div class="box2" id="reverse">
+            <div class="card2" id="card3">
+                <h3>Expense Tracker <span>&gt&gt</span></h3>
+                <p>You can track your incomes and expenses in this easy to understand app. You can also delete your transactions from history. I learnt how work with local storage.<br> I used <span>HTML</span>, <span>CSS</span> and <span>Javascript</span>.</p>
+                <a href="https://expense-tracker-janah.netlify.app" target="_blank"><button class="live"></button></a>
+                <a href="https://github.com/JanaHat/expense-tracker" target="_blank"><button class="ghub"></button></a>
+            </div>
+            <a href="https://expense-tracker-janah.netlify.app" target="_blank" class="card1" id="card4"></a>
+                
+            
+        </div>
+        <div class="box2">
+            <a href="https://lazycatcafe.netlify.app/" target="_blank" class="card1" id="card5"></a>
+            <div class="card2" id="card6">
+                <h3><span>&lt&lt</span> Cafe Website</h3>
+                <p>On this website I used grids and flexbox to achieve fully responsive layout.<br>Technologies I worked with are <span>Adobe XD</span>, <span>HTML</span>, <span>SCSS</span> and a touch of <span>Javascript</span>.</p>
+                <a href="https://lazycatcafe.netlify.app/" target="_blank"><button class="live"></button></a>
+                <a href="https://github.com/JanaHat/cafe-website" target="_blank"><button class="ghub"></button></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact section -->
+    <section class="contact" id="contact">
+        <h1><span>&lt</span>contact<span>&gt</span></h1>
+        <p>I am currently looking for new opportunities.<br>If you are intersted in working with me, you can get<br> in touch with me via email</p>
+        <a href="mailto:hatasova.j@gmail.com"><button class="contactMe">Email Me</button></a>
+        <p>or you can find me on</p>
+        <div class="social">
+            <a href="https://github.com/JanaHat" target="_blank"><button class="github"></button></a>
+            <a href="https://www.linkedin.com/in/jana-hatasova-886003204/" target="_blank"><button class="linkedin"></button></a>
+            <a href="https://www.instagram.com/janahatasova/" target="_blank"><button class="instagram"></button></a>
+        </div>
+        <h2>I look forward to hearing from you!</h2>
+    </section>
+    
+
+    <script src="main.js"></script>
+</body>
+</html>
