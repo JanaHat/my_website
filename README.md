@@ -13,8 +13,20 @@ Live site: https://janahatasova-v1.vercel.app/
 - public/
 	- index.html
 	- main.js
+	- main.min.js (generated)
 	- css/
 		- style.css
+		- style.min.css (generated)
+		- base.css
+		- layout.css
+		- nav.css
+		- home.css
+		- about.css
+		- projects.css
+		- contact.css
+		- components.css
+		- animations.css
+		- responsive.css
 		- assets/
 
 ## SEO
@@ -23,6 +35,11 @@ Live site: https://janahatasova-v1.vercel.app/
 
 ## Run Locally
 Open public/index.html in your browser.
+
+## Minify Assets
+1. Install dev dependencies: npm install
+2. Build minified files: npm run build
+3. Update public/index.html to use css/style.min.css and main.min.js when deploying.
 
 ## Deployment
 This site is static and can be deployed on any static host (Netlify, Vercel, GitHub Pages, etc.).
