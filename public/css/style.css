@@ -13,6 +13,29 @@ body {
   letter-spacing: 1px;
 }
 
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 16px;
+  background: #f9de04;
+  color: #1a1b1b;
+  padding: 8px 12px;
+  border-radius: 4px;
+  z-index: 2000;
+  text-decoration: none;
+  transition: top 0.2s ease;
+}
+
+.skip-link:focus {
+  top: 16px;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #f9de04;
+  outline-offset: 4px;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -67,6 +90,9 @@ nav ul span {
 
 nav .burger {
   display: none;
+  background: transparent;
+  border: none;
+  padding: 0;
 }
 
 nav .burger div {
@@ -815,5 +841,17 @@ footer {
   }
   section.projects .card2 {
     padding-top: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .cursor {
+    animation: none !important;
   }
 }
