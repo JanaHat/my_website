@@ -1,0 +1,39 @@
+section.contact {
+  margin: 50px 0;
+  align-items: center;
+  justify-content: center;
+}
+
+section.contact h1 {
+  font-size: 3rem;
+  font-weight: 300;
+  margin-bottom: 50px;
+}
+
+section.contact h1 span {
+  color: var(--color-accent);
+}
+
+section.contact h2 {
+  font-size: 1.7rem;
+}
+
+section.contact p {
+  width: 550px;
+  height: fit-content;
+  text-align: center;
+  line-height: 28px;
+  font-size: 1.2rem;
+  opacity: 0.6;
+}
+
+section.contact .social {
+  width: auto;
+  height: 72px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  opacity: 0.8;
+  margin: 50px 0;
+}

@@ -1,0 +1,60 @@
+@keyframes navLinkFade {
+  from {
+    opacity: 0.3;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes blink {
+  0% {
+    background-color: var(--color-text);
+  }
+  50% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: var(--color-text);
+  }
+}
+
+@keyframes x-axis {
+  0% {
+    transform: translate(-100px);
+  }
+  100% {
+    transform: translate(75px);
+  }
+}
+
+@keyframes y-axis {
+  0% {
+    transform: translateY(80px);
+  }
+  100% {
+    transform: translateY(-100px) scale(0.9);
+    background: var(--color-accent);
+  }
+}
+
+@keyframes x-axis-lateral {
+  0% {
+    transform: translate(-100px);
+  }
+  100% {
+    transform: translate(75px);
+  }
+}
+
+@keyframes y-axis-lateral {
+  0% {
+    transform: translateY(25px);
+  }
+  100% {
+    transform: translateY(-50px);
+    background: var(--color-accent);
+  }
+}

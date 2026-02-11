@@ -1,0 +1,155 @@
+section.about {
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section.about h1 {
+  font-size: 3rem;
+  font-weight: 300;
+  margin-bottom: 100px;
+}
+
+section.about h1 span {
+  color: var(--color-accent);
+}
+
+section.about p {
+  margin-bottom: 30px;
+}
+
+section.about .box1 {
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin-bottom: 50px;
+}
+
+section.about .wrapper {
+  width: 280px;
+  height: 280px;
+  filter: url("#filter");
+  margin-right: 100px;
+}
+
+section.about .wrapper .ball {
+  width: 50px;
+  height: 50px;
+  top: calc(20% - 25px);
+  left: calc(20% - 25px);
+  opacity: 0.5;
+}
+
+section.about .wrapper .ball:before {
+  background: var(--color-accent);
+  border-radius: 60%;
+  position: absolute;
+  width: 170px;
+  height: 170px;
+  content: '';
+}
+
+section.about .wrapper .ball:nth-child(1) {
+  transform: translate(-60px);
+  animation: x-axis-lateral 3s infinite alternate ease-in-out;
+}
+
+section.about .wrapper .ball:nth-child(1):before {
+  animation: y-axis-lateral 3s infinite 3s alternate ease-in-out;
+}
+
+section.about .wrapper .ball:nth-child(2) {
+  transform: translate(-150px);
+  animation: x-axis 3s infinite alternate ease-in-out;
+}
+
+section.about .wrapper .ball:nth-child(2):before {
+  animation: y-axis 2s infinite 2s alternate ease-in-out;
+}
+
+section.about .wrapper .ball:nth-child(3) {
+  transform: translate(55px, 100px);
+  animation: x-axis-lateral 2s infinite alternate ease;
+}
+
+section.about .wrapper .ball:nth-child(3):before {
+  animation: y-axis-lateral 3s infinite 4s alternate ease-in-out;
+}
+
+section.about .wrapper .ball:nth-child(4) {
+  transform: translate(75px, 200px);
+  animation: x-axis-lateral 3s infinite alternate ease;
+}
+
+section.about .wrapper .ball:nth-child(4):before {
+  animation: y-axis-lateral 3s infinite 4s alternate ease-in-out;
+}
+
+section.about .aboutme {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  width: 550px;
+  margin-left: 100px;
+  margin-bottom: 50px;
+}
+
+section.about .aboutme h1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+section.about .aboutme h2 {
+  opacity: 0.6;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+section.about .aboutme .paragraph p {
+  font-size: 1.1rem;
+  line-height: 25px;
+  text-align: justify;
+}
+
+section.about .aboutme .paragraph p span {
+  opacity: 0.6;
+}
+
+section.about .skills {
+  display: flex;
+  height: 150px;
+  width: 100%;
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+section.about .skills h3 {
+  font-size: 1.2rem;
+  margin: 15px;
+  text-align: center;
+}
+
+section.about .skills ul {
+  text-align: center;
+}
+
+section.about .skills ul li {
+  display: inline;
+  margin-right: 0.6rem;
+  color: var(--color-accent);
+  font-size: 1.5rem;
+  line-height: 30px;
+}
+
+section.about .skills ul li span {
+  margin-left: 0.6rem;
+  color: white;
+}
