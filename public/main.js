@@ -43,10 +43,15 @@ const navSlide = () => {
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.nav-links');
     const navLinks = document.querySelectorAll('.nav-links li');
+    const setMenuState = (isOpen) => {
+        burger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        burger.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+    };
     
     burger.addEventListener('click',() => {
         //toggle nav
-        nav.classList.toggle('nav-active');
+        const isOpen = nav.classList.toggle('nav-active');
+        setMenuState(isOpen);
 
         //animate links
         navLinks.forEach((link, index) => {
@@ -63,10 +68,12 @@ const navSlide = () => {
 
     
     //
-    nav.addEventListener('click', () => {
-        nav.classList.toggle('nav-notActive');
-        burger.classList.toggle('toggle');
-        nav.classList.toggle('nav-active');
+    nav.addEventListener('click', (event) => {
+        if (event.target.tagName === 'A') {
+            nav.classList.remove('nav-active');
+            burger.classList.remove('toggle');
+            setMenuState(false);
+        }
     });
     
     

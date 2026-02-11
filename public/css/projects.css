@@ -1,0 +1,95 @@
+section.projects {
+  margin-bottom: 50px;
+  align-items: center;
+}
+
+section.projects h1 {
+  font-size: 3rem;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+section.projects h1 span {
+  color: var(--color-accent);
+}
+
+section.projects h2 {
+  margin-bottom: 50px;
+  font-size: 1.5rem;
+  opacity: 0.6;
+  font-weight: 400;
+}
+
+section.projects .box2 {
+  width: 70%;
+  height: 230px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+}
+
+section.projects .card1 {
+  border: 2px solid var(--color-accent);
+  border-radius: 3px;
+  transform: scale(0.9);
+}
+
+section.projects .card1:hover {
+  transform: scale(1) translateX(-3px);
+  transition: 0.4s;
+}
+
+section.projects .card2 {
+  padding-top: 20px;
+  width: 50%;
+  height: 100%;
+  transform: scale(0.9);
+  border-radius: 3px;
+  justify-content: center;
+}
+
+section.projects .card2 p {
+  color: var(--color-text);
+  padding: 0px 20px;
+  font-size: 20px;
+  font-weight: 300;
+  opacity: 0.6;
+}
+
+section.projects .card2 p span {
+  color: var(--color-accent);
+}
+
+section.projects .card2 h3 {
+  padding: 8px 20px;
+  text-align: left;
+  font-size: 1.7rem;
+}
+
+section.projects .card2 h3 span {
+  color: var(--color-accent);
+}
+
+section.projects #card1 {
+  height: 100%;
+  width: 50%;
+  background-image: url(../css/assets/weather.webp);
+  background-position: top;
+  background-size: cover;
+}
+
+section.projects #card4 {
+  height: 100%;
+  width: 50%;
+  background-image: url(../css/assets/expense.webp);
+  background-position: top;
+  background-size: cover;
+}
+
+section.projects #card5 {
+  height: 100%;
+  width: 50%;
+  background-image: url(../css/assets/cafe1.webp);
+  background-position: top;
+  background-size: cover;
+}

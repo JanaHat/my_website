@@ -1,0 +1,83 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  width: 100%;
+  padding-right: 100px;
+  padding-left: 100px;
+  align-items: center;
+  font-size: 1.4rem;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--color-bg);
+}
+
+nav .logo {
+  height: 55px;
+  width: 49px;
+  background-image: url(../css/assets/logo.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+nav a {
+  text-decoration: none;
+  overflow: hidden;
+  background: linear-gradient(to right, var(--color-accent), var(--color-accent) 50%, var(--color-text) 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 275ms ease;
+}
+
+nav a:hover {
+  background-position: 0 100%;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+nav ul li {
+  margin-left: 2rem;
+}
+
+nav ul span {
+  color: var(--color-accent);
+}
+
+nav .burger {
+  display: none;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+nav .burger div {
+  width: 36px;
+  height: 3px;
+  background-color: var(--color-accent);
+  margin: 7px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+nav .toggle .line1 {
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+nav .toggle .line2 {
+  opacity: 0;
+}
+
+nav .toggle .line3 {
+  transform: rotate(45deg) translate(-7px, -7px);
+}
+
+nav .nav-active {
+  transform: translateX(0%);
+}

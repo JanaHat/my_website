@@ -1,0 +1,99 @@
+button {
+  cursor: pointer;
+  padding: 20px;
+  opacity: 0.9;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  color: var(--color-accent);
+}
+
+button:hover {
+  background-color: rgba(249, 222, 4, 0.2);
+  transition: 0.4s;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.contactMe {
+  margin: 50px 0;
+  background-color: transparent;
+  border: 1px solid var(--color-accent);
+  border-radius: 3px;
+}
+
+.github,
+.linkedin,
+.instagram {
+  width: 56px;
+  height: 56px;
+  min-width: 48px;
+  min-height: 48px;
+  cursor: pointer;
+  border: none;
+  background-color: var(--color-bg);
+}
+
+.github:hover,
+.linkedin:hover,
+.instagram:hover {
+  background-color: var(--color-bg);
+  transform: scale(1) translateY(-4px);
+  transition: 0.3s;
+}
+
+.github {
+  background-image: url(../css/assets/ghyellsvg.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.linkedin {
+  background-image: url(../css/assets/linkin.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.instagram {
+  background-image: url(../css/assets/instaye.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.live,
+.ghub {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  transform: scale(0.9);
+  border: none;
+  background-color: var(--color-bg);
+  margin-top: 15px;
+}
+
+.live:hover,
+.ghub:hover {
+  background-color: var(--color-bg);
+  transform: scale(1) translateY(-4px);
+  transition: 0.3s;
+}
+
+.live {
+  background-image: url(../css/assets/linkye.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: 20px;
+}
+
+.ghub {
+  background-image: url(../css/assets/gh1pt.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+footer {
+  height: 80px;
+  width: 100%;
+  border-top: 1px solid var(--color-accent);
+}

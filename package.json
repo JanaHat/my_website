@@ -1,0 +1,16 @@
+{
+  "name": "jana-hatasova-portfolio",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Static portfolio site for Jana Hatasova",
+  "scripts": {
+    "build:css": "cleancss -O2 --inline all -o public/css/style.min.css public/css/style.css",
+    "build:js": "terser public/main.js -c -m -o public/main.min.js",
+    "build:site": "node scripts/build.js",
+    "build": "npm run build:css && npm run build:js && npm run build:site"
+  },
+  "devDependencies": {
+    "clean-css-cli": "^5.6.3",
+    "terser": "^5.27.0"
+  }
+}
